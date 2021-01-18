@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h3:hover {
+      cursor: pointer;
+    }
+    p {
+      height: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meine Headline</h1>
+  <h3 id="toggler">Meine Healine dritten Grades</h3>
+  <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto magnam quidem quia enim nostrum velit neque cum nobis suscipit sunt assumenda, eius libero ducimus ex corporis, eum error illum?</p>
+  <script>
+
+    // Beispiel Funktion
+    function calculator(a,b) {
+      var ergebnis = a + b
+      return ergebnis
+    }
+
+    var toggler = document.getElementById('toggler')
+    var p = document.getElementById('text')
+
+    toggler.addEventListener("click", accordion);
+
+    
+    function accordion() {
+      document.getElementById('text').style.height = "100%";
+    }
+
+  </script>
+</body>
+</html>
